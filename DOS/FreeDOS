@@ -1,0 +1,8 @@
+# AUTOEXEC.BAT
+# --------------------------------------
+DEVLOAD C:\FDOS\BIN\NANSI.SYS
+
+SET PROMPT=$e[1;35;40m$p$g$e[1;32;40m
+
+ALIAS ls=DIR /W /P
+

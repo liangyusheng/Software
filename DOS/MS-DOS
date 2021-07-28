@@ -1,0 +1,8 @@
+# AUTOEXEC.BAT
+# ------------------------------------
+PROMPT $e[1;35;40m$p$g$e[1;32;40m
+@doskey ls=dir /w /p
+
+# CONFIG.SYS
+# ------------------------------------
+DEVICE=C:\MS-DOS\ANSI.SYS

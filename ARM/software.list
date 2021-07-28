@@ -1,0 +1,21 @@
+sudo apt install python3-pip golang ruby dosbox nasm php apache2 tightvncserver
+
+pip3 install pyinstaller
+
+# for obs-studio
+LIBGL_ALWAYS_SOFTWARE=1 obs
+
+
+``` shell
+sudo apt install samba
+
+vim /etc/samba/smb.conf
+
+# 在此文件的[global]中增加以下两条代码(NT1表示1.0版本）：
+client min protocol = NT1
+server min protocol = NT1
+
+# 然后重启smbd服务
+systemctl restart smbd
+systemctl enable smbd
+```
