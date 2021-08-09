@@ -20,6 +20,6 @@ then
     dpkg --force-confdef --force-confold --configure -a
 fi
 
-sudo -u firefly /usr/bin/vncserver
+sudo -u username /usr/bin/vncserver
 
 exit 0
