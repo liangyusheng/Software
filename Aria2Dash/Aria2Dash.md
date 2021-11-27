@@ -10,5 +10,5 @@ xx.xx.xxx.xxx:8080
 ```
 
 #### 设置
-- 'AriaNG 设置' --> 'RPC(xxx)' --> 'Aria2 RPC 密钥' --> 填写 '123'
+- 'AriaNG 设置' --> 'RPC(xxx)' --> 'Aria2 RPC 密钥' --> 填写 '1234'
 
