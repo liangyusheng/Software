@@ -42,20 +42,55 @@
 "   endif
 " endfunction
 
-set nu
 set ai!
-set ruler
 set cindent
-set hlsearch
 set nobackup
 set t_Co=256
-set tabstop=4
 set showmatch
 set autoindent
-set cursorline
 set smartindent
 set history=1000
 setlocal et sta sw=4 sts=4
+
+" 开启语法高亮功能
+syntax enable
+" 允许用指定语法高亮配色方案替换默认方案
+syntax on
+" 禁止光标闪烁
+set gcr=a:block-blinkon0
+" 总是显示状态栏
+set laststatus=2
+" 显示光标当前位置
+set ruler
+" 开启行号显示
+set number
+" 高亮显示当前行/列
+set cursorline
+set cursorcolumn
+" 高亮显示搜索结果
+set hlsearch
+" 配色方案
+set background=dark
+" 设置 gvim 显示字体
+set guifont=Source\ Code\ Pro:h13
+" 禁止折行
+set nowrap
+" 自适应不同语言的智能缩进
+filetype indent on
+" 将制表符扩展为空格
+set expandtab
+" 设置编辑时制表符占用空格数
+set tabstop=4
+" 设置格式化时制表符占用空格数
+set shiftwidth=4
+" 让 vim 把连续数量的空格视为一个制表符
+set softtabstop=4
+" 基于缩进或语法进行代码折叠
+" set foldmethod=indent
+set foldmethod=syntax
+" 启动 vim 时关闭折叠代码
+set nofoldenable
+colorscheme mycolors
 
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,gb
@@ -72,6 +107,14 @@ if has("gui_running")
     " remove right-hand scroll bar
     set guioptions-=r
     set nocompatible
+    " 禁止显示滚动条
+    set guioptions-=l
+    set guioptions-=L
+    set guioptions-=r
+    set guioptions-=R
+    " 禁止显示菜单和工具条
+    set guioptions-=m
+    set guioptions-=T
     set backspace=indent,eol,start
 else
     colorscheme mycolors
